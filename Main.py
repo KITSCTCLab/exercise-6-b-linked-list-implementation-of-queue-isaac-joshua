@@ -28,7 +28,7 @@ class Queue:
     # Write your code here
     elements = ""
     curr = self.head
-    
+    while not curr is None:
       elements += str(curr.data) + "=>"
       curr = curr.next
     print(elements + "None")
@@ -43,6 +43,5 @@ data = input_data.split(',')
 for i in range(len(operations)):
   if operations[i] == "enqueue":
     queue.enqueue(int(data[i]))
-  elif operations[i] == "dequeue":
-    queue.dequeue()
+
 queue.status()
