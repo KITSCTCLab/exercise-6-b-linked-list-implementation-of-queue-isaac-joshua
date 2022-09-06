@@ -28,7 +28,7 @@ class Queue:
     # Write your code here
     elements = ""
     curr = self.head
-    while not curr is None:
+    
       elements += str(curr.data) + "=>"
       curr = curr.next
     print(elements + "None")
@@ -36,7 +36,8 @@ class Queue:
 # Do not change the following code
 queue = Queue()
 operations = []
-
+for specific_operation in input().split(','):
+    operations.append(specific_operation.strip())
 input_data = input()
 data = input_data.split(',')
 for i in range(len(operations)):
