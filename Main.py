@@ -28,7 +28,7 @@ class Queue:
     # Write your code here
     elements = ""
     curr = self.head
-    
+    while not curr is None:
       elements += str(curr.data) + "=>"
       curr = curr.next
     print(elements + "None")
